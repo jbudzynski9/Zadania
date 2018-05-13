@@ -1,0 +1,14 @@
+Even number of ones (ascending):
+24
+35
+BD
+
+Odd number of ones (descending):
+DF
+BF
+AE
+AD
+A4
+1F
+02
+
