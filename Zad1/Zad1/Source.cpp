@@ -7,7 +7,6 @@
 
 using namespace std;
 
-
 string toHex(char C) {
 
 	stringstream sstream;
@@ -15,7 +14,6 @@ string toHex(char C) {
 	return sstream.str();
 
 }
-
 
 int numberOfOnes(int c) {
 	switch (c) {
@@ -68,8 +66,7 @@ int main() {
 	cout << "Podaj nazwe pliku z formatem (example.txt): ";
 
 	string fileName;
-	cin >> fileName;
-	
+	cin >> fileName;	
 
 	ifstream inFile;
 	inFile.open(fileName);
@@ -88,8 +85,7 @@ int main() {
 	vector<packed>even;
 	vector<packed>odd;
 	vector<packed>newBytes;
-	string temp;
-	
+	string temp;	
 	
 	for (int i = 0; i < chars.length(); i++) {
 		if (chars.at(i) > 47 &&chars.at(i) < 58 || chars.at(i) > 64 && chars.at(i) < 71) {
@@ -132,8 +128,6 @@ int main() {
 				swap(odd[j], odd[j + 1]);
 			else if ((int)odd[j].a == (int)odd[j + 1].a && (int)odd[j].b >(int)odd[j + 1].b)
 				swap(odd[j], odd[j + 1]);
-
-
 
 	ofstream outFile("result.txt");
 	outFile << "Even number of ones (ascending):" << endl;;
